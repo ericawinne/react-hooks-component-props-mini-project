@@ -1,11 +1,11 @@
 import React from "react"
 
-const About = ({image, text}) => {
+const About = ({image, about}) => {
   return (
     <aside>
-      <img src={image} placeholder="https://via.placeholder.com/215" alt="blog logo"/>
+      <img src={image ? image : "https://via.placeholder.com/215"} alt="blog logo"/>
         <p>
-        {text}
+        {about}
         </p>
     </aside>
   )
